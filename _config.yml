@@ -62,9 +62,9 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: 5bb32cddac902b5d29db        #生成的clientID
-  clientSecret: 9960eb90436beee5f4c3afe8c02cb6c8db7bec05    #生成的clientSecret
-  repo: csuperlei.github.io    #仓库名称
+  clientID: d3ca56f3693c01813faa        #生成的clientID
+  clientSecret: 8f5090102c49ee1c8b2e8560d3289b44c6b70a6b    #生成的clientSecret
+  repo: https://www.aiguqu.com/    #仓库名称
   owner: CSuperlei #github用户名
   admin: CSuperlei
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
