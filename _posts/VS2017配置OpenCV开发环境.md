@@ -1,0 +1,56 @@
+---
+layout:     post
+title:      VS2017配置OpenCV开发环境
+subtitle:   OpenCV常用的处理图像工具库
+date:       2019-07-10
+author:     CSuperlei
+header-img: img/vs_opencv/Visual_Studio.jpg
+catalog: true
+tags:
+    - Visual Studio 2017
+    - OpenCV
+---
+
+> **OpenCV** 是一个基于BSD许可（开源）发行的跨平台计算机视觉库，可以运行在Linux、Windows、Android和Mac OS操作系统上。
+
+## 创建空项目并配置OpenCV
+1. 安装OpenCV，可以去官网下载![OpenCV](https://opencv.org/)，我这里安装的是OpenCV 3.4.1。
+2. 安装目录如下图 1 所示。
+![安装目录](/img/vs-opencv-01.png)
+3. 右键项目然后打开属性，注意平台选择x64，如果是x86就选择x86，选择VC++目录中的包含目录，将opencv的include目录添加进去，如下图2所示。
+![图2](/img/vs-opencv-02.png)
+4. 将OpenCV安装目录中以下三条路径放入include中，如图3所示。
+![图3](/img/vs-opencv-03.png)
+5. 择VC++目录中的库目录，将opencv的lib目录包含进去，如图4所示。
+![图4](/img/vs-opencv-04.png)
+6. 在属性目录中选择链接器-->输入-->附加依赖项，加入 D:\develop\OpenCV\opencv_3_4_1\opencv\build\x64\vc14\lib\下的opencv_world341d.lib到附加依赖项,如图5所示。
+![图5](/img/vs-opencv-05.png)
+7. 配置完以上步骤，即可运行OpenCV
+
+## 加载配置文件实现一次配置多次调用
+> 安装完OpenCV实现加载配置文件进行环境配置
+1. 点击VS2017视图，在视图下找到其他窗口，在其他窗口下找到属性管理器，点击打开，这时候会出现一个属性管理器的按钮，如图 7 所示。
+![图7](/img/vs-opencv-07.png)
+2. 点开工程文件opencv_practice_2，下边会有Debug|Win32和Debug|x64的文件夹。分别在两个文件夹上右击，选择添加新项目属性表，Debug|Win64的如下所示，Debug|x32的操作步骤相同, 如图 8 所示。
+![图8](/img/vs-opencv-08.png)
+3. 对新创建的配置文件进行重命名，如opencv_win64.props，如图9所示。
+![图9](/img/vs-opencv-09.png)
+4. 新建完以后，在Debug|Win64目录下会出现一个我们新建的文件，如图10所示。 双击新建的项目属性文件opencv_win64和之前的配置相同添加相应路径，如图11所示。
+![图10](/img/vs-opencv-10.png)
+![图11](/img/vs-opencv-11.png)
+5. 再创建项目时，只需要找到相应的配置属性，把它添加到文件夹中就可以了。 添加：属性管理器-->项目名称-->Debug|Win32和Debug|x64即可，如图12所示。
+![图12](/img/vs-opencv-12.png)
+6. 配置完成
+
+
+
+
+
+
+
+
+
+
+
+
+
