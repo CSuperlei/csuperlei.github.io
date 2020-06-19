@@ -10,13 +10,12 @@ tags:
     - Bioinformatics
 ---
 
-# scSNVIndel:Searching the potential of using Bi-LSTM neural network for single cell SNV and Indel calling.
+# scSNVIndel: *Searching the potential of using Bi-LSTM neural network for single cell SNV and Indel calling.*
 
 <p align="left">
     <a href="https://www.aiguqu.com/2020/06/18/scSNVIndel/">
         <img src="/img/single_cell_data.jpg" alt="Blog" width="100%" />
     </a>
-    <br>
     Contact: csuperlei@gmail.com
 </p>
 
@@ -57,8 +56,7 @@ The scSNVIndel concatenates the results obtained from the above three parts as t
 The scSNVIndel send this results in to the network to train. The model architecture is in the Figure 1.
 <div align="center">
     <img src="/img/model_strcut.png">
-    <br>
-  <div align="center">Fig-1</div>
+    <div align="center">Fig-1</div>
 </div>
 ![fig-1](/img/model_struct.png)
 The output is respectively base situation, indel situation, and genotype situation.
@@ -235,22 +233,19 @@ The scSNVIndel has three outputs. The first output represents whether a base shi
 The first output training and validation curve is the Figure 2.
 <div align="center">
     <img src="/img/base_acc.png">
-    <br>
-  <div align="center">Fig-2</div>
+    <div align="center">Fig-2</div>
 </div>
 The second output represents whether a Indel has occurred.
 The sencond training and validation curve is the Figure 3.
 <div align="center">
     <img src="/img/indel_acc.png">
-    <br>
-  <div align="center">Fig-3</div>
+    <div align="center">Fig-3</div>
 </div>
 The third output represents the genotype of variation
 The third output training and validation curve is the Figure 4.
 <div align="center">
     <img src="/img/genotype_acc.png">
-    <br>
-  <div align="center">Fig-4</div>
+    <div align="center">Fig-4</div>
 </div>
 
 
