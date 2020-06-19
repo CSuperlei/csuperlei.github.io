@@ -10,7 +10,7 @@ tags:
     - Bioinformatics
 ---
 
-# scSNVIndel: *Searching the potential of using Bi-LSTM neural network for single cell SNV and Indel calling.*
+# scSNVIndel:  *Searching the potential of using Bi-LSTM neural network for single cell SNV and Indel calling.*
 
 <p align="left">
     <a href="https://www.aiguqu.com/2020/06/18/scSNVIndel/">
@@ -58,7 +58,6 @@ The scSNVIndel send this results in to the network to train. The model architect
     <img src="/img/model_strcut.png">
     <div align="center">Fig-1</div>
 </div>
-![fig-1](/img/model_struct.png)
 The output is respectively base situation, indel situation, and genotype situation.
 The base situation is whether the base occurs changed. If changed, the model will report the changing situation.
 The indel situation reports whether the Indel has occured on one position.
