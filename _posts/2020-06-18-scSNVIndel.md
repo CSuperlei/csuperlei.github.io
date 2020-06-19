@@ -11,17 +11,8 @@ tags:
 ---
 
 # scSNVIndel:Searching the potential of using Bi-LSTM neural network for single cell SNV and Indel calling.
-<p align="center">
-    <a href="https://github.com/1042970366/">
-        <img src="https://img.shields.io/badge/blog-scSNVInde-brightgreen" alt="Blog" />
-    </a>
-    <br>
-    Contact: csuperlei@gmail.com
-</p>
-<div align="center">
-    <img src="./pic/single_cell_data.jpg", width="100%", height="15%">
-    <br>
-</div>
+[![label](https://img.shields.io/badge/blog-scSNVInde-brightgreen "label")](https://www.aiguqu.com/2020/06/18/scSNVIndel/)
+
 
 ## Introduction
 Single cell sequence is popular sequencing technique in recent years.
