@@ -12,14 +12,9 @@ tags:
 
 # scSNVIndel:Searching the potential of using Bi-LSTM neural network for single cell SNV and Indel calling.
 
-<!-- <p align="center">
-    <img src="/img/single_cell_data.jpg", width="100%", height="15%">
-    <br>
-</p> -->
-<!-- ![single-cell](/img/single_cell_data.jpg) -->
 <p align="left">
     <a href="https://www.aiguqu.com/2020/06/18/scSNVIndel/">
-        <img src="/img/single_cell_data.jpg" alt="Blog" />
+        <img src="/img/single_cell_data.jpg" alt="Blog" width="100%" />
     </a>
     <br>
     Contact: csuperlei@gmail.com
