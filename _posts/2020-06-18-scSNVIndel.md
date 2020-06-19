@@ -11,8 +11,17 @@ tags:
 ---
 
 # scSNVIndel:Searching the potential of using Bi-LSTM neural network for single cell SNV and Indel calling.
-[![label](https://img.shields.io/badge/blog-scSNVInde-brightgreen "label")](https://www.aiguqu.com/2020/06/18/scSNVIndel/)
-
+<div align="center">
+    <img src="../img/single_cell_data.jpg", width="100%", height="15%">
+    <br>
+</div>
+<p align="left">
+    <a href="https://www.aiguqu.com/2020/06/18/scSNVIndel/">
+        <img src="https://img.shields.io/badge/blog-scSNVInde-brightgreen" alt="Blog" />
+    </a>
+    <br>
+    Contact: csuperlei@gmail.com
+</p>
 
 ## Introduction
 Single cell sequence is popular sequencing technique in recent years.
@@ -50,7 +59,7 @@ Finally, the scSNVIndel generates the genotype array through alignment situation
 The scSNVIndel concatenates the results obtained from the above three parts as the model input.
 The scSNVIndel send this results in to the network to train. The model architecture is in the Figure 1.
 <div align="center">
-    <img src="./model/model_strcut.png">
+    <img src="../img/model_strcut.png">
     <br>
   <div align="center">Fig-1</div>
 </div>
@@ -227,24 +236,26 @@ We will show the training and validation curve in the following.
 The scSNVIndel has three outputs. The first output represents whether a base shift has occurred.
 The first output training and validation curve is the Figure 2.
 <div align="center">
-    <img src="./pic/base_acc.png">
+    <img src="../img/base_acc.png">
     <br>
   <div align="center">Fig-2</div>
 </div>
 The second output represents whether a Indel has occurred.
 The sencond training and validation curve is the Figure 3.
 <div align="center">
-    <img src="./pic/indel_acc.png">
+    <img src="../img/indel_acc.png">
     <br>
   <div align="center">Fig-3</div>
 </div>
 The third output represents the genotype of variation
 The third output training and validation curve is the Figure 4.
 <div align="center">
-    <img src="./pic/genotype_acc.png">
+    <img src="../img/genotype_acc.png">
     <br>
   <div align="center">Fig-4</div>
 </div>
+
+
 
 
 
