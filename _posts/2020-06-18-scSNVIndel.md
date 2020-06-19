@@ -194,8 +194,7 @@ optional arguments:
 
 # Demo
 
-* Generation training data 
-
+* Generation training data    
 ```
 ## generation variant data
 python main.py -v ${vcf file name} -b ${bam file name} -fa ${fasta file name} -d ${output of variant data} -lo ${log level} -m 3 -dm 1
@@ -205,28 +204,24 @@ python main.py -v ${vcf file name} -b ${bam file name} -fa ${fasta file name} -d
 
 ```
 
-* Combine data of variation and non-variation 
-
+* Combine data of variation and non-variation    
 ```
 python main.py -dco ${data combine original directory} -dct ${output of data combine target filename} -m 4
 
 ```
 
-* Training scSNVIndel
-
+* Training scSNVIndel   
 ```
 python main.py -ld ${load training filename} -g ${gpu numbers} -lo {log level} -m 1
 ```
 
-* Generation testing data
-
+* Generation testing data   
 ```
 python main.py -b ${bam file} -fa {fasta file} -r {test region file} -d {out put test data} -lo {log level} -m 3
 
 ```
 
-* Validation the model
-
+* Validation the model   
 ```
 python main.py  -ld {test data file} -g {gpu numbers} -lo {log level} -m 2 -tm 2
 
