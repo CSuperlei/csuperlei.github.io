@@ -10,7 +10,7 @@ tags:
     - Bioinformatics
 ---
 
-# scSNVIndel:  *Searching the potential of using Bi-LSTM neural network for single cell SNV and Indel calling.*
+# scSNVIndel:  *Searching the potential of using Bi-LSTM neural network for single cell SNV and Indel calling*
 
 <p align="left">
     <a href="https://www.aiguqu.com/2020/06/18/scSNVIndel/">
@@ -200,25 +200,40 @@ python main.py -v ${vcf file name} -b ${bam file name} -fa ${fasta file name} -d
 
 ## generation non-variant data
 python main.py -v ${vcf file name} -b ${bam file name} -fa ${fasta file name} -d ${output of non-variant data} -lo ${log level} -m 3 -dm 2
+
 ```
-### Combine data of variation and non-variation    
+
+* Combine data of variation and non-variation   
 ```
 python main.py -dco ${data combine original directory} -dct ${output of data combine target filename} -m 4
-```
-### Training scSNVIndel   
-```
-python main.py -ld ${load training filename} -g ${gpu numbers} -lo {log level} -m 1
-```
-### Generation testing data   
-```
-python main.py -b ${bam file} -fa {fasta file} -r {test region file} -d {out put test data} -lo {log level} -m 3
 
 ```
-### Validation the model   
+
+* Training scSNVIndel
 ```
-python main.py  -ld {test data file} -g {gpu numbers} -lo {log level} -m 2 -tm 2
+python main.py -ld ${load training filename} -g ${gpu numbers} -lo ${log level} -m 1
+```
+
+* Generation testing data
+```
+python main.py -b ${bam file} -fa ${fasta file} -r ${test region file} -d ${out put test data} -lo ${log level} -m 3
 
 ```
+
+* Validation the model
+```
+python main.py  -ld ${test data filename} -sr ${saving validation filename} -g ${gpu numbers} -lo ${log level} -m 2 -tm 2
+
+```
+
+* Output the VCF file
+
+```
+
+python main.py  -ld ${validation filename} -fa ${fasta.ai filename} -ov ${out put vcf filename} -g ${gpu numbers} -lo ${log level} -m 5
+
+```
+
 
 # Display
 We will show the training and validation curve in the following.
