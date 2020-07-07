@@ -188,6 +188,8 @@ optional arguments:
   --test, -tm           test;  mode 1 is batch test, mode 2 is random data
   --dc_origin, -dco     data combine original directory
   --dc_target, -dct     data combine target filename
+  --save_result, '-sr'  save the predict result
+  --out_vcf,  '-ov'     generation of vcf file
   --mode, -m            mode 1 is training; mode 2 is tesing; mode 3 generates data; mode 4 combines data; mode 5 generates vcf
 
 ```
